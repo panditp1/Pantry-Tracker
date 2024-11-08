@@ -1,12 +1,11 @@
 // app/layout.js
-import '../public/styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../public/styles.css'; // Import your custom styles after Bootstrap
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
