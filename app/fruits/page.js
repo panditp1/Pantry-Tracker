@@ -3,8 +3,7 @@
 import { useEffect, useState } from 'react';
 import { db } from '../firebaseConfig';
 import { collection, query, where, getDocs } from 'firebase/firestore';
-import './fruits.css';
-
+import '../styles/categories.css';
 
 export default function FruitsPage() {
   const [fruits, setFruits] = useState([]);

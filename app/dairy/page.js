@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { db } from '../firebaseConfig';
 import { collection, query, where, getDocs } from 'firebase/firestore';
+import '../styles/categories.css';
 
 export default function DairyPage() {
   const [dairyItems, setDairyItems] = useState([]);
